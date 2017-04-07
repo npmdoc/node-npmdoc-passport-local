@@ -1,11 +1,13 @@
-# api documentation for  [passport-local (v1.0.0)](https://github.com/jaredhanson/passport-local#readme)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-passport-local.svg)](https://travis-ci.org/npmdoc/node-npmdoc-passport-local)
+# api documentation for  [passport-local (v1.0.0)](https://github.com/jaredhanson/passport-local#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-passport-local.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-passport-local) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-passport-local.svg)](https://travis-ci.org/npmdoc/node-npmdoc-passport-local)
 #### Local username and password authentication strategy for Passport.
 
 [![NPM](https://nodei.co/npm/passport-local.png?downloads=true)](https://www.npmjs.com/package/passport-local)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-passport-local/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-passport_local_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-passport-local/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-passport-local/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-passport-local%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-passport-local/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-passport-local/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-passport-local/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-passport-local/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
