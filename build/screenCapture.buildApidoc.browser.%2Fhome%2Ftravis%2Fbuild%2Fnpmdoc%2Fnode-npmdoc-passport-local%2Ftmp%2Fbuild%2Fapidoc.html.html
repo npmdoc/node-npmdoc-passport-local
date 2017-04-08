@@ -1,0 +1,292 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/jaredhanson/passport-local#readme">passport-local (v1.0.0)</a>
+</h1>
+<h4>Local username and password authentication strategy for Passport.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-local">module passport-local</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.Strategy">
+            function <span class="apidocSignatureSpan">passport-local.</span>Strategy
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.super_">
+            function <span class="apidocSignatureSpan">passport-local.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-local.</span>super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-local.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-local.super_">module passport-local.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.super_.super_">
+            function <span class="apidocSignatureSpan">passport-local.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.super_.Strategy">
+            function <span class="apidocSignatureSpan">passport-local.super_.</span>Strategy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-local.super_.prototype">module passport-local.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.super_.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-local.super_.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-local.utils">module passport-local.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-local.utils.lookup">
+            function <span class="apidocSignatureSpan">passport-local.utils.</span>lookup
+            <span class="apidocSignatureSpan">(obj, field)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-local" id="apidoc.module.passport-local">module passport-local</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.Strategy" id="apidoc.element.passport-local.Strategy">
+        function <span class="apidocSignatureSpan">passport-local.</span>Strategy
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy(options, verify) {
+  if (typeof options == 'function') {
+    verify = options;
+    options = {};
+  }
+  if (!verify) { throw new TypeError('LocalStrategy requires a verify callback'); }
+
+  this._usernameField = options.usernameField || 'username';
+  this._passwordField = options.passwordField || 'password';
+
+  passport.Strategy.call(this);
+  this.name = 'local';
+  this._verify = verify;
+  this._passReqToCallback = options.passReqToCallback;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.super_" id="apidoc.element.passport-local.super_">
+        function <span class="apidocSignatureSpan">passport-local.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-local.super_" id="apidoc.module.passport-local.super_">module passport-local.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.super_.super_" id="apidoc.element.passport-local.super_.super_">
+        function <span class="apidocSignatureSpan">passport-local.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.super_.Strategy" id="apidoc.element.passport-local.super_.Strategy">
+        function <span class="apidocSignatureSpan">passport-local.super_.</span>Strategy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-local.super_.prototype" id="apidoc.module.passport-local.super_.prototype">module passport-local.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.super_.prototype.authenticate" id="apidoc.element.passport-local.super_.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-local.super_.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req, options) {
+  throw new Error('Strategy#authenticate must be overridden by subclass');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return done(null, user);
+    });
+  }
+));
+
+#### Authenticate Requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `'local'` strategy, to
+authenticate requests.
+
+For example, as route middleware in an [Express](http://expressjs.com/)
+application:
+
+app.post('/login',
+  passport.authenticate('local', { failureRedirect: '/login' }),
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-local.utils" id="apidoc.module.passport-local.utils">module passport-local.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-local.utils.lookup" id="apidoc.element.passport-local.utils.lookup">
+        function <span class="apidocSignatureSpan">passport-local.utils.</span>lookup
+        <span class="apidocSignatureSpan">(obj, field)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lookup = function (obj, field) {
+  if (!obj) { return null; }
+  var chain = field.split(']').join('').split('[');
+  for (var i = 0, len = chain.length; i &lt; len; i++) {
+    var prop = obj[chain[i]];
+    if (typeof(prop) === 'undefined') { return null; }
+    if (typeof(prop) !== 'object') { return prop; }
+    obj = prop;
+  }
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
