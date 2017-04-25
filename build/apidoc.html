@@ -100,12 +100,6 @@
 
         </li>
 
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-local.</span>utils</span>
-
-        </li>
-
     </ol></li>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.passport-local.Strategy">module passport-local.Strategy</a><ol>
@@ -172,19 +166,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.passport-local.super_.prototype.authenticate">
             function <span class="apidocSignatureSpan">passport-local.super_.prototype.</span>authenticate
             <span class="apidocSignatureSpan">(req, options)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.passport-local.utils">module passport-local.utils</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.passport-local.utils.lookup">
-            function <span class="apidocSignatureSpan">passport-local.utils.</span>lookup
-            <span class="apidocSignatureSpan">(obj, field)</span>
             </a>
 
         </li>
@@ -262,8 +243,6 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-
-
 
 
 
@@ -442,34 +421,6 @@ application:
 app.post(&#x27;/login&#x27;,
   passport.authenticate(&#x27;local&#x27;, { failureRedirect: &#x27;/login&#x27; }),
 ...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.passport-local.utils" id="apidoc.module.passport-local.utils">module passport-local.utils</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.passport-local.utils.lookup" id="apidoc.element.passport-local.utils.lookup">
-        function <span class="apidocSignatureSpan">passport-local.utils.</span>lookup
-        <span class="apidocSignatureSpan">(obj, field)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">lookup = function (obj, field) {
-  if (!obj) { return null; }
-  var chain = field.split(&#x27;]&#x27;).join(&#x27;&#x27;).split(&#x27;[&#x27;);
-  for (var i = 0, len = chain.length; i &#x3c; len; i++) {
-    var prop = obj[chain[i]];
-    if (typeof(prop) === &#x27;undefined&#x27;) { return null; }
-    if (typeof(prop) !== &#x27;object&#x27;) { return prop; }
-    obj = prop;
-  }
-  return null;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
