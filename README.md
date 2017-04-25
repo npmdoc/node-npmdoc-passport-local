@@ -1,6 +1,6 @@
 # npmdoc-passport-local
 
-#### api documentation for  [passport-local (v1.0.0)](https://github.com/jaredhanson/passport-local#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-passport-local.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-passport-local) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-passport-local.svg)](https://travis-ci.org/npmdoc/node-npmdoc-passport-local)
+#### basic api documentation for  [passport-local (v1.0.0)](https://github.com/jaredhanson/passport-local#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-passport-local.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-passport-local) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-passport-local.svg)](https://travis-ci.org/npmdoc/node-npmdoc-passport-local)
 
 #### Local username and password authentication strategy for Passport.
 
@@ -76,7 +76,8 @@
     "scripts": {
         "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
